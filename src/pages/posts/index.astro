@@ -1,0 +1,14 @@
+---
+import Blog from "../../layouts/Blog.astro"
+const posts = await Astro.glob("./**/*.md")
+---
+
+<Blog content={{ title: "Welcome to my blog!" }}>
+    { posts.map((post) => <a href={post.url}>
+        <div>
+            <h1>{post.frontmatter.title}</h1>
+            <h2>{post.frontmatter.description}</h2>
+
+        </div>
+    </a>) }
+</Blog>

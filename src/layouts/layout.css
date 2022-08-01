@@ -1,7 +1,7 @@
 :root {
 		--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
-		--font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+		--font-size-xl: 2rem;
 
 		--color-text: hsl(12, 5%, 4%);
 		--color-bg: hsl(10, 21%, 95%);
@@ -18,11 +18,11 @@
 
 	}
 
-	:global(h1) {
+	h1 {
 		font-size: var(--font-size-xl);
 	}
 
-	:global(h2) {
+	h2 {
 		font-size: var(--font-size-lg);
 	}
 
@@ -31,3 +31,64 @@
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 
+
+
+	.background-gradient {
+		background: #FFC0CB;
+		background: linear-gradient(38deg, rgba(246, 97, 81, 1) 0%, rgba(251, 154, 155, 1) 21%, rgba(255, 192, 203, 1) 55%, rgba(247, 179, 207, 1) 77%, rgba(220, 138, 221, 1) 100%);
+	}
+
+    body {
+        color: #0000;
+        background-color: #242424;
+    }
+
+	@media (prefers-color-scheme: dark) {
+		.background-gradient {
+			background: #c63168;
+			background: linear-gradient(38deg, rgba(246, 97, 81, 1) 0%, rgba(198, 49, 104, 1) 21%, rgba(198, 49, 104, 1) 55%, rgba(198, 49, 104, 1) 77%, rgba(220, 138, 221, 1) 100%);
+		}
+
+        body {
+            @apply text-white bg-dark;
+        }
+
+		body a {
+			@apply dark:text-blue-100 text-blue-900;
+		}
+	}
+
+	@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+  details {
+    @apply m-6 border-solid rounded-md;
+    @apply text-lg;
+
+    summary {
+      @apply text-2xl flex;
+    }
+  }
+    pre {
+      @apply bg-[#011627] text-[#d6deeb];
+
+      code {
+          
+          @apply p-4 m-0 overflow-x-auto inline-block max-w-[80vw] lg: max-w-[50vw]
+      }
+    }
+    
+}
+
+	@media (prefers-color-scheme: dark) {
+		.icons {
+			filter: invert();
+		}
+	}

@@ -8,13 +8,14 @@
 
 
 import { defineConfig } from 'windicss/helpers'
-
+import typography from 'windicss/plugin/typography'
 export default defineConfig({
     darkMode: 'media',
     content: [
-        "./src/components/**/*.{vue,js,ts,jsx,tsx}",
+        "./src/**/*.{vue,js,ts,jsx,tsx,astro}",
     
     ],
+    
     theme: {
         extend: {
             backgroundColor: {
@@ -35,5 +36,10 @@ export default defineConfig({
             },
         },
     },
-    plugins: [],
+    plugins: [
+          typography({
+            // Turns text color to light, when dark mode enabled. Default = false
+            dark: true,
+          })
+    ],
 })
