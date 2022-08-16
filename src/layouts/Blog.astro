@@ -8,10 +8,7 @@ const { content } = Astro.props;
     <main>
         <div class="markdown-content">
             <div class="background-gradient md-title w-full h-60 grid place-items-center">
-                <div>
-                    <h1>{content.title}</h1>
-                    <h2>{content.description}</h2>
-                </div>
+                <PostCard content={content} />
             </div>
             <div class="lg:p-16 p-4 grid place-items-center">
                 <div class="slot">
@@ -26,8 +23,6 @@ const { content } = Astro.props;
         font-size: 2rem;
 
     }
-
- 
 
     .slot {
         @apply lg: max-w-[50vw] max-w-80vw flex flex-col space-y-2 pt-6;
