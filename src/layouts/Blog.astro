@@ -6,6 +6,7 @@ const { content } = Astro.props;
 
 <Layout title={content.title}>
     <main>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <div class="markdown-content">
             <div class="background-gradient md-title w-full h-60 grid place-items-center">
                 <PostCard content={content} />
