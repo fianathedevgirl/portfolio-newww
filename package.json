@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@react-spring/parallax": "^9.5.2",
+    "@remark-embedder/core": "^3.0.1",
+    "@remark-embedder/transformer-oembed": "^3.0.0",
     "postcss-windicss": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
