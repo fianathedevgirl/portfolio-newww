@@ -1,0 +1,12 @@
+---
+import Layout from "./Layout.astro"
+
+const { content } = Astro.props;
+---
+
+<Layout title={content.title}>
+    <slot />
+    <div class="p-6 flex">
+
+    </div>
+</Layout>
