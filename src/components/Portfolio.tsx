@@ -142,7 +142,7 @@ export default function Portfolio() {
             ></ParallaxLayer>
             <ParallaxLayer offset={4} speed={0.5} className="flex text-white justify-center items-center flex-col space-y-8 pr-12 p-8">
                 <h1 className="text-4xl">Find me in my socials</h1>
-                <div className="flex space-x-2 h-5 icons">
+                <div className="flex space-x-2 h-5 invert">
                     <a href="https://twitter.com/lovelyy_fiaa" target="_blank"><img className="h-10" src="/icons/twitter.svg" />
                     </a>
                     <a href="https://github.com/lovelyyfiaaa" target="_blank"><img className="h-10" src="/icons/github.svg" /></a>
