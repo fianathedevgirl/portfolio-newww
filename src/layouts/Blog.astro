@@ -10,7 +10,9 @@ const { content } = Astro.props;
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <div class="markdown-content">
             <div class="background-gradient md-title w-full h-60 grid place-items-center">
-                <PostCard content={content} />
+                <PostCard content={content}>
+                    <slot name="description" slot="description"/>
+                </PostCard>
             </div>
             <div class="lg:p-16 p-4 grid place-items-center">
                 <div class="slot">
