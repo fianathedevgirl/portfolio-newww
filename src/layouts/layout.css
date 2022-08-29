@@ -35,12 +35,12 @@
 
 	.background-gradient {
 		background: #FFC0CB;
-		background: linear-gradient(38deg, rgba(246, 97, 81, 1) 0%, rgba(251, 154, 155, 1) 21%, rgba(255, 192, 203, 1) 55%, rgba(247, 179, 207, 1) 77%, rgba(220, 138, 221, 1) 100%);
+		background: linear-gradient(38deg, rgba(246, 97, 81, 1) 0%, rgba(251, 154, 155, 1) 21%, rgba(255, 192, 203, 1) 55%, rgba(247, 179, 207, 1) 77%, rgba(255, 255, 255, 0.979) 100%);
 	}
 
 	body {
 		background-color: #FEFEFE;
-		color: #000000;
+		color: #bf104c;
 	}
 
 	a {
