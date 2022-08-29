@@ -121,12 +121,12 @@ export default function Portfolio() {
 
                         For Japanese urban media (manga/anime/light novel), I really enjoy genres that are focused on relationships and the mind aspect, like the shoujou genre!! I don't really enjoy anything outside of Slice of Life, except Detective Conan!<br /><br />
 
-                        Shounen can be nice but they have lots of inappropriate scenes The only better ones are some portion of the GL genre, like Yagakimi and Adachi and Shimamura, because while they're mainly shounen stories, they're shoujou at heart!!!
+                        Shounen can be nice but they have lots of inappropriate scenes, which I hate..
                     </details>
                     <details>
-                        <summary>{'I lovee you sooo much 😍😍 <3'}</summary>
+                        <summary>{'I lovee you sooo much  <3'}</summary>
 
-                        I loveee you tooo!! 🥰🥰🥰💖💖✨✨
+                        I loveee you tooo
                     </details>
                 </div>
 
