@@ -140,7 +140,7 @@ export default function Portfolio() {
                         "linear-gradient(50deg, rgba(28,113,216,1) 28%, rgba(32,132,195,1) 34%, rgba(46,194,126,1) 66%, rgba(46,194,126,1) 68%, rgba(46,194,126,1) 94%, rgba(46,194,126,1) 96%)",
                 }}
             ></ParallaxLayer>
-            <ParallaxLayer offset={4} speed={0.5} className="flex justify-center items-center flex-col space-y-8 pr-12 p-8">
+            <ParallaxLayer offset={4} speed={0.5} className="flex text-white justify-center items-center flex-col space-y-8 pr-12 p-8">
                 <h1 className="text-4xl">Find me in my socials</h1>
                 <div className="flex space-x-2 h-5 icons">
                     <a href="https://twitter.com/lovelyy_fiaa" target="_blank"><img className="h-10" src="/icons/twitter.svg" />

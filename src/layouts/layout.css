@@ -102,7 +102,7 @@
 }
 
 	@media (prefers-color-scheme: dark) {
-		.icons {
+		.invert-in-dark {
 			filter: invert();
 		}
 	}
