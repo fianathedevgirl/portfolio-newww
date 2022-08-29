@@ -74,11 +74,11 @@ export default function Portfolio() {
                     </div>
                 </div>
             </ParallaxLayer>
-            <ParallaxLayer speed={3} offset={2} className="relative w-screen h-screen z-20 flex place-items-center">
+            <ParallaxLayer speed={3} offset={2} className="relative w-screen h-screen z-7 flex place-items-center text-[#f3b6d6] ">
 
-                <div className="absolute p-8 pr-18 lg:left-8 lg:w-[35vw] space-y-8" style={{
+                <div className="absolute p-8 pr-18 lg:left-8 top-0 lg:w-[35vw] space-y-8" /*style={{
                     WebkitTextStroke: "0.05rem black"
-                }}>
+                }}*/>
                     <span className="mb-16">
                         <h1 className="text-4xl font-semibold">Run all your FOSS apps</h1>
                         <h2 className="text-2xl">Everywhere. Anytime! 💖✨</h2>
@@ -90,15 +90,17 @@ export default function Portfolio() {
                         <h3>It does so by running the Smithay Wayland compositor as a native Android app! 💕💕</h3>
                     </span>
 
-                    <a className="color-white h-8 text-xl bold no-underline" href="https://github.com/waylovely-project/smithay"><p>Coming Soon 👋</p></a>
+                    <a className="color-white h-8 text-xl bold no-underline" href="https://github.com/waylovely-project/waylovely" style={{
+                        color: "white"
+                    }}><p className="color-white">Coming Soon 👋</p></a>
                 </div>
 
 
 
             </ParallaxLayer>
 
-            <ParallaxLayer speed={2} offset={2} horizontal={false} className="z-8 relative h-screen w-screen">
-                <img className="absolute top-30 right-30 lg:top-10 lg:top-2 lg:right-50 h-[100vh - 2rem]" src="/waylovely-stack-phone.png" />
+            <ParallaxLayer speed={2} offset={2} horizontal={false} className="z-6 relative h-screen w-screen  bg-[#E94686]">
+                <img className="absolute top-30 right-0 mr-[-12rem] md:mr-0 lg:top-10 lg:top-2 lg:right-50 h-[100vh - 2rem]" src="/waylovely-stack-phone.png" />
 
             </ParallaxLayer>
             <ParallaxLayer offset={3} speed={0.8} className="grid place-items-center">
