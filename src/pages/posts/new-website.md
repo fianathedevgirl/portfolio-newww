@@ -1,6 +1,9 @@
 ---
 layout: ../../layouts/Blog.astro
 title: Welcome to my new websitee!!!
+tags: ["astro", "self", "tech"]
+author: "Nefo Fortressia"
+date: "August 2022"
 ---
 
 Hiiii!!! It has been quite sometime since I last made a blog.
