@@ -1,0 +1,14 @@
+---
+import PostCard from "../../components/PostCard.astro";
+import Blog from "../../layouts/Blog.astro"
+const posts = await Astro.glob("./**/*.md")
+---
+
+<Blog content={{ title: "Literature" }}>
+    { posts.map((post) => <a href={post.url}>
+        <div>
+            <PostCard content={post.frontmatter} />
+
+        </div>
+    </a>) }
+</Blog>
